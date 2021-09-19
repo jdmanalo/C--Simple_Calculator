@@ -1,0 +1,44 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int num1;
+		int num2;
+		int total;
+		Console.WriteLine("Num1");
+		num1 = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Num2");
+		num2 = Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("(+,-,*,/)");
+		Console.Write("Choose the operation:");
+		string choose = Console.ReadLine();
+		if(choose == "+")
+		{
+			total = num1 + num2;
+			Console.WriteLine("answer : "+ total);
+		
+		}
+		else if(choose == "-")
+		{
+			total = num1 - num2;
+			Console.WriteLine("answer :" + total);
+		}
+		else if (choose == "*" )
+		{
+			total = num1 * num2;
+			Console.WriteLine(" answer :" + total);
+		}
+		else if (choose == "/" )
+		{
+			total = num1 / num2;
+			Console.WriteLine("answer : " + total);
+		}
+		
+		else{
+			Console.WriteLine("False");
+		}
+	}
+}
